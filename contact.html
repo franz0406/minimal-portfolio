@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 부트스트랩 4.6.1 Version -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- 폰트 어썸 아이콘 SVG 방식-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+    <title>Contact - Minimal Portfolio Theme</title>
+</head>
+<body>
+    <header> <!--헤더-->
+        <h1 class="logo"><a href="index.html">logo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header> <!--헤더 끝-->
+
+    <main> <!--메인 컨탠츠-->
+        <section class="container">
+            <div class="contact-title">
+                <h3 class="heading6">Let’s Get in Touch</h3>
+                <p class="narrow-width">You can call me, email me directly or connect with me through my social networks.</p>
+                <address>(+40) 744122222</address>
+                <a href="mailto:hello@adipurdila.com">hello@adipurdila.com</a>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <hr class="double-line">
+            </div>
+            <div class="contact-quote">
+                <h3 class="heading6">Need a quote?</h3>
+                <p class="narrow-width">Use the form below. All fields are required.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>estimate request</legend>
+                        <div class="request-field">
+                            <label for="clientName">Full Name:</label>
+                            <input type="text" id="clientName" class="plain-text" placeholder="Your Name">
+                        </div>
+                        <div class="request-field">
+                            <label for="clientEmail">Email Address:</label>
+                            <input type="email" id="clientEmail" class="plain-text" placeholder="Email Address">
+                        </div>
+                        <div class="request-field">
+                            <label for="clientPhone">Phone Number:</label>
+                            <input type="text" id="clientPhone" class="plain-text" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                        </div>
+                        <div class="request-field">
+                            <label for="projectType">Project Type::</label>
+                            <select name="" id="projectType">
+                                <option value="none" selected disabled hidden>- Select Project Type -</option>
+                                <option value="website">Website Design</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="print">Print</option>
+                            </select>
+                        </div>
+                        <div class="request-field">
+                            <label for="projectDesc" class="default-label">Project Description:</label>
+                            <textarea name="" id="projectDesc" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="request-field">
+                            <label for="budget">Available Budget::</label>
+                            <input type="text" id="budget" class="numeric" placeholder="$0.00">
+                        </div>
+                    </fieldset>
+                    <div class="submit">
+                        <button class="primary btn">Give me a quote</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main> <!--메인 컨탠츠 끝-->
+
+    <footer> <!--푸터-->
+        <section class="copyright">
+            <p class="copytight-text">&copy; Copyright 2013. Portfolio</p>
+        </section>
+    </footer>
+</body>
+</html>

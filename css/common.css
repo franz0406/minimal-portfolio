@@ -135,6 +135,11 @@ form > fieldset > .request-field > label {
     width: 133px;
     line-height: 54px;
 }
+form > fieldset > .request-field > label.default-label {
+    padding: 17px 17px 0;
+    text-indent: 0;
+    line-height: 1.2;
+}
 form > fieldset > .request-field > input {
     flex:1;
     padding-left: 16px;

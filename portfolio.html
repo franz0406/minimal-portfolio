@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- 폰트 어썸 아이콘 SVG 방식-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
-    <title>Minimal Portfolio Theme</title>
+    <title>Portfolio - Minimal Portfolio Theme</title>
 </head>
 <body>
     <header> <!--헤더-->
@@ -29,23 +30,14 @@
 
     <main> <!--메인 컨탠츠-->
         <section class="container">
-            <ul class="latest-portfolio row">
-                <li class="col-md-4">
-                    <div class="contents">
-                        <h2 class="heading-2">I'm Hwang</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="contents">
-                        <h2 class="heading-2">I create super awesome stuff</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="contents">
-                        <h2 class="heading-2">I’m available for freelance projects</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
+            <div class="portfolio-filter">
+                <button class="secondary btn" data-filter="*">All</button>
+                <button class="secondary btn" data-filter=".print">Print</button>
+                <button class="secondary btn" data-filter=".websites">Websites</button>
+                <button class="secondary btn" data-filter=".mobile">Mobile</button>
+            </div>
+            <ul class="portfolio row">
+                <li class="col-md-4 portfolio-item print">
                     <div class="contents">
                         <img src="./asset/images/portfolio_01.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -59,7 +51,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 portfolio-item print">
                     <div class="contents">
                         <img src="./asset/images/portfolio_02.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -73,7 +65,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 portfolio-item mobile">
                     <div class="contents">
                         <img src="./asset/images/portfolio_03.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -87,7 +79,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 portfolio-item mobile">
                     <div class="contents">
                         <img src="./asset/images/portfolio_04.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -101,7 +93,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 portfolio-item websites">
                     <div class="contents">
                         <img src="./asset/images/portfolio_05.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -115,7 +107,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 portfolio-item websites">
                     <div class="contents">
                         <img src="./asset/images/portfolio_06.jpg" alt="portfolio">
                         <div class="hover-image">
@@ -130,8 +122,9 @@
                     </div>
                 </li>
             </ul>
-            <div class="latest-portfolio-link">
-                <a href="#" class="primary btn">See my full portfolio</a>
+            <div class="portfolio-nav">
+                <a href="#" class="secondary btn">Previous Page</a>
+                <a href="#" class="secondary btn">Next Page</a>
             </div>
         </section>
     </main> <!--메인 컨탠츠 끝-->
