@@ -11,6 +11,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Bitter', serif;
+    font-weight: 400;
 }
 .heading-1 {
     font-size: 36px;
@@ -160,4 +161,10 @@ form > fieldset > .request-field > select {
 }
 form > fieldset > .request-field > textarea {
     padding: 17px 16px;
+}
+
+.narrow-width {
+    margin: 0 auto;
+    max-width: 370px;
+    text-align: center;
 }
