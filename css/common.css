@@ -104,7 +104,8 @@ button { /* btn style */
     pointer-events: none;
 } /* btn style ends */
 
-form {
+
+form { /* form style */
     margin: 0 auto;
     width: 470px;
 }
@@ -166,10 +167,15 @@ form > fieldset > .request-field > select {
 }
 form > fieldset > .request-field > textarea {
     padding: 17px 16px;
-}
+} /* form style Ends*/
+
 
 .narrow-width {
     margin: 0 auto;
     max-width: 370px;
     text-align: center;
+}
+
+.box-shadow {
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
 }

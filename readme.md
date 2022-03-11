@@ -1,7 +1,9 @@
 ### HTML Attribute 우선순위
 
 
-Attribute의 우선순위는 다음 순위를 따른다.
+Attribute의 우선순위는 다음 순위를 따른다.  
+
+
 |순서|속성|
 |----|:----:|
 |1|rel|
