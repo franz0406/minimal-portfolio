@@ -42,6 +42,11 @@ h1,h2,h3,h4,h5,h6,ul {
     padding: 0;
 }
 
+main {
+    padding: 48px 0;
+    background: url(../asset/images/pattern_bg.png);
+}
+
 .logo > a {
     display: block;
     width: 97px;
@@ -71,6 +76,7 @@ button { /* btn style */
 }
 .primary:hover {
     background: #ff5948;
+    color: #fff;
 }
 .primary:active, .primary:focus {
     box-shadow: none;
@@ -178,4 +184,81 @@ form > fieldset > .request-field > textarea {
 
 .box-shadow {
     box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+}
+.shadow-top {
+    box-shadow: 2px 0 5px rgba(0,0,0, 0.4);
+}
+/* portfolio elements */
+.portfolio > li {
+    margin-bottom: 24px;
+}
+.portfolio > li > .contents {
+    position: relative;
+    padding: 3px;
+}
+.portfolio > li > .contents > img {
+    width: 100%;
+    height: auto;
+}
+.portfolio > li > .contents > .hover-image {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.portfolio > li > .contents > .hover-image > .description {
+    position: absolute;
+    top: 50%; right: 77px;
+    transform: translateY(-50%);
+    text-align: right;
+}
+.portfolio > li > .contents > .hover-image > .description > h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+.portfolio > li > .contents > .hover-image > .description > a {
+    color:#7a7a7a;
+    font-style: italic;
+}
+.portfolio > li > .contents > .hover-image > .description > .arrow-right {
+    position: absolute;
+    top: 3px;
+    right: -30px;
+}
+.portfolio > li > .contents > .hover-image > .description > .arrow-right > svg {
+    font-size: 12px;
+    color: #d92328;
+}
+.portfolio > li:hover > .contents > .hover-image {
+    opacity: 1;
+}
+.latest-portfolio-link {
+    margin-top: 24px;
+    text-align: center;
+}
+
+hr.single-line {
+    width: 370px;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, 
+        rgba(200,200,200,0),
+        rgba(200,200,200,1),
+        rgba(200,200,200,0)
+    );
+}
+
+hr.double-line {
+    margin: 20px auto;
+    width: 120px;
+    border: none;
+    border-top: 1px solid #dcdbdb;
+    border-bottom: 1px solid #dcdbdb;
+    height: 3px;
+}
+
+a {
+    font-weight: normal;
+    color: #e54d42;
 }
